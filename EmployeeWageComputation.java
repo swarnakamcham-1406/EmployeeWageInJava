@@ -12,9 +12,14 @@ public class EmployeeWageComputation {
 		int totalSalary=0;
 		int salary=0;
 		int numWorkingDays=20;
-			for(int day=1;day<=numWorkingDays; day++)
+		int totalworkingDays=0;
+		int totalEmpHrs=0;
+		int maxHrsInMonth=100;
+			while(totalEmpHrs <= maxHrsInMonth && totalworkingDays < numWorkingDays )
       			{
-
+			
+			
+				totalworkingDays++;
 		double empcheck=Math.floor(Math.random() * 10) % 3;
 		int intValue=(int) Math.round(empcheck);
 			switch (intValue) {
