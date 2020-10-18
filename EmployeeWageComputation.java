@@ -11,19 +11,23 @@ public class EmployeeWageComputation {
 		int empHr;
 		int salary=0;
 		double empcheck=Math.floor(Math.random() * 10) % 3;
-			if (isPartTime == 1) {
-			  empHr=8;  
+		int intValue=(int) Math.round(empcheck);
+			switch (intValue) {
+			  case 1:
+					empHr=8;  
 				salary=empHr * empRatePerHr;
 				System.out.println("The Salary is :" + salary);
-			}
-			else if (isFullTime == 2) {
-				empHr=12;
-				salary=empHr * empRatePerHr;
-				System.out.println("The Salary is :" + salary);
-			}
-			else {
+                                break;			
+          			case 2:
+
+            				empHr=12;
+	         			salary=empHr * empRatePerHr;
+		         		System.out.println("The Salary is :" + salary);
+					break;
+				default:
 				empHr=0;
 				System.out.println("The Salary is :" + salary);
+					break;
 			}
 			  
 
