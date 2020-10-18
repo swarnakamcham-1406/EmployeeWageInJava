@@ -17,7 +17,7 @@ public class EmployeeWageComputation {
 				System.out.println("The Salary is :" + salary);
 			}
 			else if (isFullTime == 2) {
-				empHr=4;
+				empHr=12;
 				salary=empHr * empRatePerHr;
 				System.out.println("The Salary is :" + salary);
 			}
